@@ -1,0 +1,45 @@
+urxvt.background:   #0D0B0D
+urxvt.foreground:   #F3E7C6
+urxvt.cursorColor:  #F3E7C6
+
+! black
+urxvt.color0:       #1E2F41
+urxvt.color8:       #906B61
+
+! red
+urxvt.color1:       #84252C
+urxvt.color9:       #C94428
+
+! green
+urxvt.color2:       #8B9C4D
+urxvt.color10:      #C0BD86
+
+! yellow
+urxvt.color3:       #D6C08F
+urxvt.color11:      #AD683B
+
+! blue
+urxvt.color4:       #236599
+urxvt.color12:      #E09657
+
+! magenta
+urxvt.color5:       #751A37
+urxvt.color13:      #C22C5B
+
+! cyan
+urxvt.color6:       #AE7D6E
+urxvt.color14:      #D9945F
+
+! white
+urxvt.color7:       #B99F8D
+urxvt.color15:      #F3E7C6
+
+!URxvt*depth:		32
+!URxvt*background:	[85]#000000
+URxvt*scrollBar:	false
+!URxvt*font:		xft:Inconsolata\\-g:style=g:pixelsize=12
+!URxvt*font:		xft:inconsolata:size=11
+URxvt*font:		xft:Inconsolata\\-g for Powerline:style:g:pixelsize=12
+
+URxvt*letterSpace:	-1
+!URxvt*iconFile:	/usr/share/icons/Faience/apps/scalable/bash.svg

@@ -1,0 +1,33 @@
+#!/bin/sh
+
+Time()
+{
+	DATE=$(date +%d.%m)
+	TIME=$(date +%T)
+	echo "$DATE, $TIME"
+}
+
+Battery()
+{
+	BATTERY=`(acpi --battery | awk -F, '{print $2}')`
+	echo "BAT$BATTERY"
+}
+
+Brightness()
+{
+	TEMP=`(cat /sys/class/backlight/radeon_bl0/brightness)`
+	BRIGHTNESS=$(echo "scale=2; 100/(255/$TEMP)" | bc | rev | cut -b4- | rev)
+	echo "BRI $BRIGHTNESS"
+}
+
+Temperature()
+{
+	TEMPERATURE=`(sensors | grep temp1 | cut -d'+' -f2 | head -c2)`
+	echo "CPU $TEMPERATURE°"
+}
+
+while true; do
+	#echo "S$(Temperature) $(Battery) $(Brightness) | $(Time)"
+	echo "S$(Time)"
+	sleep 1;
+done
